@@ -15,10 +15,12 @@ const App = () => {
       <NavBar/>
       {showLogin && <Login />}
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/result' element={<Result />} />
-        <Route path='/buy' element={<BuyCredit />} />
-      </Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/result" element={<Result />} />
+  <Route path="/buy" element={<BuyCredit />} />
+  <Route path="*" element={<Home />} />
+</Routes>
+
 
       <Footer/>
     </div>
